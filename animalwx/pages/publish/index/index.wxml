@@ -1,0 +1,68 @@
+<view class="container">
+    <form >
+        <view class="form-image">
+            <view class="uploadtext" bindtap="uploadImage">请上传图片</view>
+            <view class="uploadimge">
+                <image src ="{{imagelist}}"></image>
+            </view>
+            <view class="uploadtext" bindtap="uploadFile">点击上传</view>
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">宠物昵称：</view>
+            <input class="form-input" value="{{name}}" placeholder="宠物昵称" placeholder-class="input-item" bindinput="bindname"/>        
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">种类：</view>
+            <input class="form-input" value="{{category}}" placeholder="宠物类型" placeholder-class="input-item" bindinput="bindcategory"/>    
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">年龄：</view>
+            <input class="form-input" value="{{age}}" placeholder="宠物年龄" placeholder-class="input-item" bindinput="bindage"/>        
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">性别：</view>
+            <input class="form-input" value="{{gender}}" placeholder="男生/女生" placeholder-class="input-item" bindinput="bindGender"/>    
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">是否注射疫苗：</view>
+            <input class="form-input" value="{{vaccine}}" placeholder="未免疫/已免疫" placeholder-class="input-item" bindinput="bindvaccine"/>    
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">是否驱虫：</view>
+            <input class="form-input" value="{{repellent}}" placeholder="未驱虫/已驱虫" placeholder-class="input-item" bindinput="bindrepellent"/>      
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">是否绝育：</view>
+            <input class="form-input" value="{{sterilization}}" placeholder="未绝育/已绝育" placeholder-class="input-item" bindinput="bindsterilization"/>   
+        </view>
+        <view class="form-detail">
+            <view class="form-detailtext">TA的故事：</view>
+            <view class="animaldetail">
+                <textarea placeholder="请输入宠物描述..." bindinput="binddetail" name="animaldetail" />  
+             </view>
+        </view>
+        <view class="form-condition">
+            <view class="pubstyle">领养条件:</view>
+            <view class="form-cditem">
+                <checkbox-group bindchange="checkboxChange">
+                    <label class="form-label" wx:for="{{items}}" wx:key="value">
+                        <view class="form-checkbox">
+                            <checkbox value="{{item.value}}" checked="{{item.checked}}"/>
+                        </view>
+                        <view class="form-checkboxname">{{item.name}}</view>
+                     </label>
+                </checkbox-group>
+            </view>
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">姓名：</view>
+            <input class="form-input" value="{{username}}" placeholder="请输入姓名" placeholder-class="input-item" bindinput="bindUsername"/>
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">联系方式：</view>
+            <input class="form-input" value="{{phone}}" placeholder="请输入联系方式" placeholder-class="input-item" bindinput="bindphone"/>
+        </view>
+        <button form-type="submit" class="form-submit" bindtap="submitClick">提交</button>
+    </form>
+
+</view>

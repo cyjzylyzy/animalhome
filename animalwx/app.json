@@ -1,0 +1,65 @@
+{
+    "lazyCodeLoading": "requiredComponents",
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/animalmall/mall/mall",
+        "pages/user/index/index",
+        "pages/publish/index/index",
+        "pages/rear/rear",
+        "pages/user/login/login",
+        "pages/indexitem/adopt/adopt",
+        "pages/indexitem/answer/answer",
+        "pages/indexitem/sign/sign",
+        "pages/publish/adopt/adopt",
+        "pages/detailindex/animaldetail/animaldetail",
+        "pages/detailindex/rearcat/rearcat",
+        "pages/user/myaddress/myaddress",
+        "pages/user/myadopt/myadopt",
+        "pages/user/myinfo/myinfo",
+        "pages/user/mypulish/mypublish",
+        "pages/user/mysupport/mysupport",
+        "pages/publish/rear/rear"
+    ],
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序位置接口的效果展示"
+        }
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#876",
+        "navigationBarTitleText": "流浪之家",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "images/item/select11.jpg",
+                "selectedIconPath": "images/item/select6.jpg"
+            },
+            {
+                "pagePath": "pages/rear/rear",
+                "text": "云养",
+                "iconPath": "images/item/select3.jpg",
+                "selectedIconPath": "images/item/shou.jpg"
+            },
+            {
+                "pagePath": "pages/publish/index/index",
+                "text": "发布",
+                "iconPath": "images/item/select10.jpg",
+                "selectedIconPath": "images/item/select5.jpg"
+            },
+            {
+                "pagePath": "pages/user/index/index",
+                "text": "我的",
+                "iconPath": "images/item/select5.jpg",
+                "selectedIconPath": "images/item/select9.jpg"
+            }
+        ]
+    }
+}

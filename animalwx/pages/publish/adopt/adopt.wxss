@@ -1,0 +1,62 @@
+/* pages/publish/adopt/dopt.wxss */
+page{
+    background: rgb(247, 248, 248);
+}
+.container{
+    margin-top: 22rpx;
+}
+.form-item{
+    margin-top: 5rpx;
+    height: 120rpx;
+    background: white;
+    display: flex;
+    flex-direction: row;  
+    text-align: center; 
+}
+.form-item>text{
+    margin-left: 20rpx;
+    margin-top:50rpx ;
+}
+.pubstyle{
+    width: 200rpx;
+    margin-top: 42rpx;
+    margin-left: 10rpx;
+}
+
+.form-input{
+    margin-top: 40rpx;
+    margin-left: 300rpx;
+    width: 200rpx;   
+}
+.input-item{
+    font-size: 28rpx;
+}
+
+.form-detail{
+    margin-left: 10rpx;
+    margin-top: 10rpx;
+    padding: 10rpx;
+    height: 250rpx;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+.animaldetail{
+    width: 600rpx;
+    height: 140rpx;
+    margin-top: 10rpx;
+    margin-left: 50rpx;
+    border: 2rpx solid #d3d0d0;
+    border-radius: 20rpx;
+}
+
+.form-submit{
+    padding: 20rpx;
+    margin: 0 auto;
+    background-color: #ebd871;
+    border-radius: 50rpx;
+    width:130rpx;
+    display: flex;
+    align-content: center;
+
+}

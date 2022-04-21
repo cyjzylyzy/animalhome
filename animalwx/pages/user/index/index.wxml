@@ -1,0 +1,43 @@
+<view class="form-item">
+    <image class="form-item-bgimg"  src="https://cyj-1301925644.cos.ap-chengdu.myqcloud.com/animalimage/item/background1.jpeg"></image>
+    <view class="form-item-infor">
+        <image class="form-item-img"  wx:if="{{userInfo}}" src="{{userInfo.avatarUrl}}"></image>
+        <image class="form-item-img" wx:else="{{userInfo}}" src="https://cyj-1301925644.cos.ap-chengdu.myqcloud.com/animalimage/item/default.jpg"></image>
+        <view class="form-item-login" wx:if="{{userInfo}}">
+            <view bindtap="onClickLogout">{{userInfo.username}}</view>
+        </view>
+        <view class="form-item-login" wx:else="{{userInfo}}">
+            <navigator url="/pages/user/login/login">登录|</navigator>
+            <navigator url="/pages/user/register/register">注册</navigator>
+        </view>
+       
+    </view>
+    <view class="form-self">
+        <view class="form-selfstyle">
+            <text>爱心值</text>
+            <text class="form-selfstyle-text">{{userInfo.userscore}}</text>
+        </view>
+        <view class="form-selfstyle">
+            <text>消息</text>
+            <text class="form-selfstyle-text">{{usermessage}}</text>
+        </view>
+    </view>
+</view>
+<view class="form-list">
+    <view class="form-listext" bindtap="myadopt">
+        <navigator url="/pages/user/myadopt/myadopt" class="list">我的领养</navigator>
+    </view>
+    <view class="form-listext" bindtap="myrear">
+        <navigator url="/pages/user/mysupport/mysupport" class="list">我的云养</navigator>
+    </view>
+    <view class="form-listext" bindtap="mypulish">
+        <navigator url="/pages/user/mypulish/mypublish" class="list">我的发布</navigator>
+    </view> 
+    <view class="form-listext" bindtap="myadress">
+        <navigator url="/pages/user/myaddress/myaddress" class="list">个人地址</navigator>
+    </view> 
+    <view class="form-listext" bindtap="myinformation">
+        <navigator url="/pages/user/myinfo/myinfo" class="list">个人资料</navigator>
+    </view>
+       
+</view>

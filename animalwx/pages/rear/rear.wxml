@@ -1,0 +1,21 @@
+
+ <view class="container">
+  <view class="rearimg"><image src="https://cyj-1301925644.cos.ap-chengdu.myqcloud.com/animalimage/item/rear.png"></image></view>
+  <view class="form-animal" >
+  <view class="form-animal-item" wx:for="{{animalList}}" wx:key="index">
+      <image class="form-animalimg" src="{{item.imgurl}}"></image>
+      <navigator url="/pages/detailindex/rearcat/rearcat?rearId={{item.id}}">
+        <view class="animal-info">
+          <view class="animalname" >{{item.name}}</view>
+          <view class="animalname">{{item.age}}</view>
+        </view> 
+        <view class="animaldetails">{{item.details}}</view>
+        <view class="animal-health">
+          <view class="health1">{{item.vaccine}}</view>
+          <view class="health2">{{item.repellent}}</view>
+          <view class="health3">{{item.sterilization}}</view>
+        </view>
+      </navigator>
+  </view>
+</view>
+</view>

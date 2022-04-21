@@ -1,0 +1,15 @@
+<view class="container">
+	<image src="https://cyj-1301925644.cos.ap-chengdu.myqcloud.com/animalimage/item/background1.jpeg"></image>
+    <view class="form-box">
+    	<view class="form-item">
+			<view class="form-item-phone">账  号：</view>
+    		<input class="phone" value="{{userphone}}" bindinput="bindphone" maxlength="11" placeholder="请输入手机号"/>
+    	</view>
+		<view class="form-item">
+			<view class="form-item-code">密 码：</view>
+    		<input class="code" value="{{password}}" bindinput="bindpassword"  placeholder="请输入密码"/>
+    	</view>
+	<!-- <button type="primary" class="login-btn" bindtap="userLogin" >账号登录</button> -->
+	<button type="primary" class="login-btn" open-type="getUserInfo" bindgetuserinfo="onclickSubmit" >账号登录</button>
+    </view>
+</view>

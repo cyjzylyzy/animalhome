@@ -1,0 +1,55 @@
+<!--pages/user/myadopt/myadopt.wxml-->
+<view class="form-animal" >
+  <view class="form-animal-item">
+      <image class="form-animalimg" src="{{adopt.animal.imgurl}}"></image>
+      <view class="animal-info">
+        <view class="animalname" >{{adopt.animal.name}}</view>
+      </view> 
+      <view class="animal-health">
+          <view class="health1">{{adopt.animal.vaccine}}</view>
+          <view class="health2">{{adopt.animal.repellent}}</view>
+          <view class="health3">{{adopt.animal.sterilization}}</view>
+        </view>
+  </view>
+</view>
+
+<view class="form-animal">
+  <view class="adoptinfo">我的领养信息</view>
+  <view class="form-item">
+        <text>我的名字：</text>
+        <input class="form-input" type="text" value="{{adopt.name}}" bindinput="bindname" placeholder="我的名字"/> 
+    </view>
+    <view class="form-item">
+        <text>我的年龄：</text>
+        <input class="form-input" type="text"  value="{{adopt.adoptUser.age}}" bindinput="bindage" placeholder="我的年龄"/> 
+    </view>
+    <view class="form-item">
+        <text>我的工作：</text>
+        <input class="form-input" type="text" value="{{adopt.work}}" bindinput="bindwork"  placeholder="我的工作"/> 
+    </view>
+    <view class="form-item">
+        <text>养宠经验：</text>
+        <input class="form-input" type="text"  value="{{adopt.experience}}" bindinput="bindexperience" placeholder="养宠经验"/> 
+    </view>
+    <view class="form-item">
+        <text>婚姻状况：</text>
+        <input class="form-input" type="text"  value="{{adopt.married}}" bindinput="bindmarried" placeholder="已婚/未婚"/> 
+    </view>
+    <view class="form-item">
+        <text> 我的工资：</text>
+        <input class="form-input" type="text"  value="{{adopt.salary}}" bindinput="bindsalary" placeholder="工资"/> 
+    </view>
+    <view class="form-item">
+        <text>我的地址：</text>
+        <input class="form-input" type="text"  value="{{adopt.address}}"  bindinput="bindaddress" placeholder="输入地址"/> 
+    </view>
+    <view class="form-item">
+        <text>我的手机号</text>
+        <input class="form-input" type="text"  value="{{adopt.phone}}" bindinput="bindphone"  placeholder="输入手机号"/> 
+    </view>
+    <view class="form-detail">
+        <text>领养宣言：</text>
+        <textarea class="animaldetail" value="{{adopt.adoptdetail}}" bindinput="binddetail"  id="detail" cols="30" rows="10"></textarea> 
+    </view> 
+
+</view>

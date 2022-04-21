@@ -1,0 +1,13 @@
+
+ <view class="container">
+  <view class='send'>我发布的送养</view>
+  <view>
+    <view ></view>
+  </view>
+ </view>
+ <view class="container">
+  <view class='seek'>我发布的寻宠</view>
+  <view>
+    <view ></view>
+  </view>
+ </view>

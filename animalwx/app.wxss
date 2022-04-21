@@ -1,0 +1,12 @@
+/**app.wxss**/
+page{
+  font-family: 楷体;
+}
+.container {
+  height: 100%;
+  width: 100%;
+} 
+.placeholder{
+  height: 1cm;
+  background-color: #000000;
+}

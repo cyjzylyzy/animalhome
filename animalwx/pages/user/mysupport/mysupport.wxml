@@ -1,0 +1,13 @@
+<view id="top">
+  <text id="top_animal_img">宠物图片</text>
+  <text id="top_animal_name">宠物名</text>
+  <text id="top_price">云养金额</text>
+</view>
+<view class="form-animal" >
+  <view class="form-animal-item" wx:for="{{support}}" wx:key="index">
+      <image class="form-animalimg" src="{{item.animal.imgurl}}"></image>
+      <view class="animalname" >{{item.animal.name}}</view>
+      <view class="animalname">￥{{item.money}}</view>
+  </view>
+</view>
+

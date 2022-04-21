@@ -1,0 +1,40 @@
+<!--pages/publish/rear/rear.wxml-->
+<view class="container">
+        <view class="form-image">
+                <image src ="{{animal.imgurl}}"></image>
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">宠物昵称：</view>
+            <view class="form-input">{{animal.name}}</view>     
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">种类：</view>
+            <view class="form-input">{{animal.category}}</view> 
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">年龄：</view>
+             <view class="form-input">{{animal.age}}</view>       
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">性别：</view>
+             <view class="form-input">{{animal.gender}}</view> 
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">是否注射疫苗：</view>
+             <view class="form-input">{{animal.vaccine}}</view>
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">是否驱虫：</view>
+             <view class="form-input">{{animal.repellent}}</view>      
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">是否绝育：</view>
+            <view class="form-input">{{animal.sterilization}}</view>  
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">云养金额：</view>
+            <input class="form-input" value="{{money}}" placeholder-class="input-item" bindinput="bindmoney"/>
+        </view> 
+        <view class="form-submit" bindtap="doPayment">提交</view>
+</view>
+

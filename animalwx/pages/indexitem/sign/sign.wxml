@@ -1,0 +1,48 @@
+<!--pages/indexitem/attendance/attendance.wxml-->
+<view class="signbkimg">
+    <image src="https://cyj-1301925644.cos.ap-chengdu.myqcloud.com/animalimage/item/background1.jpeg"></image>
+    <view class="sign-con"> 
+        <view class="headNews-left">
+            <image src="{{userInfo.avatarUrl}}"></image>
+            <!-- <image src="https://cyj-1301925644.cos.ap-chengdu.myqcloud.com/animalimage/dogs/dog27.jpg"></image> -->
+            <view>
+                <view class="nikename">{{userInfo.username}}</view>
+                <view>已签到{{calendarSignDay}}天</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="calendar">
+    <view class="preNext-path">
+        <view class="preNext" bindtap="sign_prev">{{prev}}</view>
+        <view class="preNext">{{year}}年{{month}}月</view>
+        <view class="preNext" bindtap="sign_next">{{next}}</view>
+    </view>
+
+    <view class="weekName"> 
+        <view class="sunday">日</view>
+        <view class="monday">一</view>
+        <view class="tuesday">二</view>
+        <view class="wednesday">三</view>
+        <view class="thursday">四</view>
+        <view class="friday">五</view>
+        <view class="saturday">六</view>
+    </view>
+    <view class="week">
+        <view wx:key="index" wx:for="{{nbsp}}">\n</view>
+        <view wx:for="{{date-1}}" wx:key="index" style="color:antiquewhite；">
+            <text wx:if="{{item+1 == calendarSignData[item+1]}}" style="color: #26c5c5;font-size: 22rpx;">已签到</text>
+            <text wx:else="">{{item+1}}</text>
+        </view>
+        <view class="selDate">
+            <text wx:if="{{date == calendarSignData[date]}}" class="selDateItem">已签到</text>
+            <text wx:else="" style="color: #26c5c5;">{{date}}</text>
+        </view>
+        <view wx:for="{{monthDaySize-date}}" wx:key="index">{{item+date+1}}</view>
+    </view>     
+        <view class="calendarSign">
+            <button class="signInbtn" wx:if="{{date != calendarSignData[length-1].sign_day}}" bindtap="bindsign">签到</button>
+            <button wx:else="" class="signInbtn">今日已签到</button>
+        </view>
+    
+</view>

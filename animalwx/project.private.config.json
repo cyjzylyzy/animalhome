@@ -1,0 +1,200 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "",
+                    "pathName": "pages/my/my",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/user/login/login",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/index/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/user/userlogin/userlogin",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/publish/publish",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/publish/index/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/publish/seek/seek",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/index/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/user/index/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/animalmall/mall/mall",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/indexitem/attendance/attendance",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/detailindex/animaldetail/animaldetail",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/detailindex/goodsdetail/goodsdetail",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/detailindex/dogdetail/dogdetail",
+                    "query": "dogId=40",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/animalmall/goods/goods",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/detailindex/dogdetail/dogdetail",
+                    "query": "dogId=40",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/detailindex/dogdetail/dogdetail",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/indexitem/answer/answer",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/indexitem/adopt/adopt",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/publish/send/send",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/publish/send/send",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/user/login/login",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/user/mycart/mycart",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/animalmall/mall/mall",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/user/mysupport/mysupport",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/user/mypulish/mypublish",
+                    "query": "",
+                    "scene": null,
+                    "launchMode": "default"
+                }
+            ]
+        }
+    }
+}

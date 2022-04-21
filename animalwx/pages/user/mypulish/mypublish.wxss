@@ -1,0 +1,4 @@
+/* pages/user/mypulish/mypublish.wxss */
+.container{
+    width: 100%;
+}

@@ -1,0 +1,58 @@
+<!--index.wxml-->
+<view class="container">
+ <swiper class="lunbo" autoplay="true" indicator-dots="true" >
+    <swiper-item>
+      <image src="https://cyj-1301925644.cos.ap-chengdu.myqcloud.com/animalimage/dogs/dog.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://cyj-1301925644.cos.ap-chengdu.myqcloud.com/animalimage/dogs/dog2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://cyj-1301925644.cos.ap-chengdu.myqcloud.com/animalimage/dogs/dog3.jpg"></image>
+    </swiper-item>
+ </swiper>
+</view>
+<view class="box">
+  <view class="box-style">
+    <view class="box-text" bindtap="adoptclick" >
+      <image class="imgtext" src="https://cyj-1301925644.cos.ap-chengdu.myqcloud.com/animalimage/item/title4.jpg"></image>
+      <view class="textstyle">领养</view>
+    </view>
+    <view class="box-text" bindtap="answerclick">
+      <image class="imgtext" src="https://cyj-1301925644.cos.ap-chengdu.myqcloud.com/animalimage/item/title8.jpg" ></image>
+      <text class="textstyle">答题</text>
+    </view>
+    <navigator class="box-text" url="/pages/indexitem/sign/sign">
+      <image class="imgtext" src="https://cyj-1301925644.cos.ap-chengdu.myqcloud.com/animalimage/item/title6.jpg"></image>
+      <text class="textstyle">签到</text>
+    </navigator>
+  </view>
+</view>
+<view class="note" >
+  <view class="note-item">公告</view>
+  <view wx:for="{{notice}}" wx:key="index">
+    <view class="note-item">{{item.title}}</view>
+    <view class="note-text">{{item.details}}</view>
+  </view>
+</view>
+
+<view class="form-animal" >
+  <view class="form-animal-item" wx:for="{{animalInfoList}}" wx:key="index">
+      <image class="form-animalimg" src="{{item.imgurl}}"></image>
+      <navigator url="/pages/detailindex/animaldetail/animaldetail?aniamlId={{item.id}}">
+        <view class="animal-info">
+          <view class="animalname" >{{item.name}}</view>
+          <view class="animalname">{{item.age}}</view>
+        </view> 
+        <view class="animaldetails">{{item.details}}</view>
+        <view class="animal-health">
+          <view class="health1">{{item.vaccine}}</view>
+          <view class="health2">{{item.repellent}}</view>
+          <view class="health3">{{item.sterilization}}</view>
+        </view>
+      </navigator>
+  </view>
+  <view class="animalbottom">
+    <navigator url="/pages/indexitem/adopt/adopt">点击查看更多 》》</navigator> 
+  </view>
+</view>

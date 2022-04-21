@@ -1,0 +1,51 @@
+/* pages/user/mysupport/mysupport.wxss */
+ #top{
+    display: flex;
+    margin: 10rpx 10rpx 0 10rpx;
+    font-size: 40rpx;
+    height: 80rpx;
+  }
+  
+  #top_animal_img{
+    width: 200rpx;
+    text-align: center;
+    border-right: 1rpx solid #eee;
+  }
+  #top_animal_name{
+    margin-left: 20rpx;
+    width: 250rpx;
+    text-align: center;
+    border-right: 1rpx solid #eee;
+  }
+  #top_specifications{
+    width: 130rpx;
+    text-align: center;
+    border-right: 1rpx solid #eee;
+  }
+  #top_price{
+    text-align: center;
+    border-right: 1rpx solid #eee;
+  }
+ .form-animal{
+    background: azure;
+    margin-top: 32rpx;
+  }
+  .form-animal-item{
+        margin-left:20rpx;
+        margin-top: 32rpx;
+        height: 220rpx;
+        display: flex;
+        flex-direction: row;
+        box-shadow:1rpx 2rpx 2rpx 2rpx #eee;
+  }
+  .form-animalimg{
+      width: 200rpx;
+      height: 200rpx;
+      
+  }
+  .animalname{
+    width: 130rpx;
+    margin-left: 50rpx;
+    margin-top: 10rpx;
+    text-align: center;
+  }

@@ -1,0 +1,40 @@
+<!--pages/publish/adopt/dopt.wxml-->
+<view class="container">
+    <view class="form-item">
+        <text>我的名字：</text>
+        <input class="form-input" type="text" value="{{name}}" bindinput="bindname" placeholder="我的名字"/> 
+    </view>
+    <view class="form-item">
+        <text>我的年龄：</text>
+        <input class="form-input" type="text"  value="{{age}}" bindinput="bindage" placeholder="我的年龄"/> 
+    </view>
+    <view class="form-item">
+        <text>我的工作：</text>
+        <input class="form-input" type="text" value="{{work}}" bindinput="bindwork"  placeholder="我的工作"/> 
+    </view>
+    <view class="form-item">
+        <text>养宠经验：</text>
+        <input class="form-input" type="text"  value="{{experience}}" bindinput="bindexperience" placeholder="养宠经验"/> 
+    </view>
+    <view class="form-item">
+        <text>婚姻状况：</text>
+        <input class="form-input" type="text"  value="{{married}}" bindinput="bindmarried" placeholder="已婚/未婚"/> 
+    </view>
+    <view class="form-item">
+        <text> 我的工资：</text>
+        <input class="form-input" type="text"  value="{{salary}}" bindinput="bindsalary" placeholder="工资"/> 
+    </view>
+    <view class="form-item">
+        <text>我的地址：</text>
+        <input class="form-input" type="text"  value="{{address}}"  bindinput="bindaddress" placeholder="输入地址"/> 
+    </view>
+    <view class="form-item">
+        <text>我的手机号</text>
+        <input class="form-input" type="text"  value="{{phone}}" bindinput="bindphone"  placeholder="输入手机号"/> 
+    </view>
+    <view class="form-detail">
+        <text>领养宣言：</text>
+        <textarea class="animaldetail" value="{{adoptdetail}}" bindinput="binddetail"  id="detail" cols="30" rows="10"></textarea> 
+    </view>
+    <view class="form-submit" bindtap="adoptPost">提交申请</view>
+</view>

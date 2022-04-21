@@ -1,0 +1,119 @@
+
+<view class="container" >
+    <view class="form-top" >
+        <view class="form-image" >
+            <swiper  class="lunbo" autoplay="{{true}}" indicator-dots="{{true}}">
+                <swiper-item >
+                    <image class="lunboimg" src="{{aniaml.imgurl}}"></image>
+                </swiper-item>
+            </swiper>
+        </view>
+        <view class="form-text">
+           <text>云养我吧</text> 
+        </view>
+        <view class="form-info">
+            <view class="form-infobox">
+                <view class="form-infotext" >
+                    <image src="https://cyj-1301925644.cos.ap-chengdu.myqcloud.com/animalimage/item/tone.png"></image>
+                    <text>{{aniaml.name}}</text>
+                </view>
+                <view class="form-infotext">
+                    <image src="https://cyj-1301925644.cos.ap-chengdu.myqcloud.com/animalimage/item/gender.png"></image>
+                    <text>{{aniaml.gender}}</text>
+                </view>
+                <view class="form-infotext">
+                    <image src="https://cyj-1301925644.cos.ap-chengdu.myqcloud.com/animalimage/item/birthday.png"></image>
+                    <text>{{aniaml.age}}</text>
+                </view>
+            </view>
+            <view class="form-infobox">
+                <view class="form-infotext">
+                    <image src="https://cyj-1301925644.cos.ap-chengdu.myqcloud.com/animalimage/item/quchong.png"></image>
+                    <text>{{aniaml.repellent}}</text>
+                </view>
+                <view class="form-infotext">
+                    <image src="https://cyj-1301925644.cos.ap-chengdu.myqcloud.com/animalimage/item/jueyu.png"></image>
+                    <text>{{aniaml.sterilization}}</text>
+                </view>
+                <view class="form-infotext">
+                    <image src="https://cyj-1301925644.cos.ap-chengdu.myqcloud.com/animalimage/item/yimiao.png"></image>
+                    <text>{{aniaml.vaccine}}</text>
+                </view>
+            </view> 
+        </view>
+        <view class="form-story">
+            <view class="form-storytext">| Ta的故事</view>
+            <view class="form-story-detail">{{aniaml.details}}</view>
+        </view>
+    </view> 
+    <view class="form-notice">
+        <view class="form-storytext">| 温馨提示</view>
+        <view class="form-story-detail">  宠物领养官方解释权由本平台所有，请爱宠友友注意诈骗信息和狗贩信息</view> 
+    </view>
+    <view class="form-adoptcond">
+        <view class="form-storytext">| 领养流程</view>
+        <image src="https://cyj-1301925644.cos.ap-chengdu.myqcloud.com/animalimage/item/animalline.png" ></image> 
+    </view>
+    <view class="form-reply">
+        <view class="form-storytext" >| 评论</view>
+        <view class="form-comment" wx:for="{{aniaml.comment}}" wx:key="index" wx:for-index='idx'>
+            <view class="parent">
+                <view>{{item.user__username}}:</view>
+                <text>{{item.content}}</text>
+                <text bindtap="onClickShowCommentModal"
+                 data-did="{{aniaml.id}}" 
+                 data-cid="{{item.id}}" 
+                 data-name="{{item.user__username}}" 
+                 data-depth="{{item.depth+1}}"
+                 data-rid="{{item.id}}"
+                 data-rootindex="{{idx}}">回复</text>
+            </view>
+            <view class="child" wx:if="{{item.child}}">
+                <view wx:for="{{item.child}}" wx:key="index" wx:for-item="node">
+                    <view>{{node.replys__user__username}}:</view>
+                    <text>{{node.content}}</text>
+                    <text bindtap="onClickShowCommentModal"
+                    data-did="{{aniaml.id}}" 
+                    data-cid="{{node.id}}" 
+                    data-name="{{node.user__username}}" 
+                    data-depth="{{node.depth+1}}"
+                    data-rid="{{item.id}}"
+                    data-rootindex="{{idx}}">回复</text>
+                </view>
+                <view bindtap="getMore" data-root="{{item.id}}" data-idx="{{idx}}">查看更多>></view>
+            </view>
+        </view>
+        <view class="comment-buttom">
+            <view class="comment-area" wx:if="{{isShowCommentModal}}">
+                <view class="top">
+                    <image class="big-avatar" src="{{aniaml.user.avatarUrl}}"></image>
+                    <text>评论</text>
+                    <view class="reply" wx:if="{{reply.cid}}">回复{{reply.name}}
+                        <icon type="clear" size="15" bindtap="onClickClearReply"></icon>
+                    </view>
+                    <view class="hide">
+                        <icon type="cancel" size="30" bindtap="onClickCancelCommentModal"></icon>
+                        </view>
+                </view>
+                <textarea fixed="true" placeholder="评论内容" bindinput="inputComment" rows="10"></textarea>
+                <view class="btn">
+                    <view class="publish" bindtap="onClickPostComment">发布</view>
+                </view>
+                
+            </view>
+            <view class="text-input" wx:else="">
+                <image class="big-avatar"></image>
+                <input placeholder="说点什么..." bindtap="onClickShowCommentModal" data-did="{{aniaml.id}}" data-depth="{{1}}"/>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="bottom">
+    <view class="from-bottom" bindtap="onClickindex">
+            <image class="bottom-img" src="https://cyj-1301925644.cos.ap-chengdu.myqcloud.com/animalimage/item/select11.jpeg"></image>
+            <text>首页</text>
+    </view>
+    <view class= "from-bottom"> 
+        <navigator class="apply" url="/pages/publish/rear/rear?animalId={{aniaml.id}}">云养它{{aniaml.id}}</navigator>
+    </view>
+</view>

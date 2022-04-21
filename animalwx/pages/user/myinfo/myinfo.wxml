@@ -1,0 +1,32 @@
+<!--pages/user/myinfo/myinfo.wxml-->
+<view class="container">
+        <view class="form-image">
+            <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">昵称：</view>
+            <input class="form-input" value="{{userInfo.username}}" placeholder-class="input-item" bindinput="bindname"/>        
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">手机号：</view>
+            <input class="form-input" value="{{userInfo.userphone}}" placeholder="手机号码" placeholder-class="input-item" bindinput="binduserphone"/>        
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">性别：</view>
+            <input class="form-input" value="{{userInfo.gender}}" placeholder="手机号码" placeholder-class="input-item" bindinput="bindname"/>  
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">密码：</view>
+            <input class="form-input" value="{{userInfo.password}}" placeholder="密码" placeholder-class="input-item" bindinput="bindname"/>        
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">邮箱：</view>
+            <input class="form-input" value="{{userInfo.email}}" placeholder="邮箱" placeholder-class="input-item" bindinput="bindage"/>        
+        </view>
+        <view class="form-item">
+            <view class="pubstyle">联系地址：</view>
+            <input class="form-input" value="{{userInfo.address}}" placeholder="宠物昵称" placeholder-class="input-item" bindinput="bindaddress"/>        
+        </view>
+        <button form-type="submit" class="form-submit">提交</button>
+</view>
+

@@ -1,0 +1,43 @@
+<view class="time" bindtap="getDae">
+  <view class="timetxt">{{time}}</view>
+</view>
+<!-- 渲染题目 -->
+<view class="timuId">{{id}}/{{num}}</view>
+<view class="container">
+  <view class="timubox">{{title}}</view>
+  <view class="selections">
+    <view data-text="{{answer_A}}"  bindtap="isright" class="selectionSon">
+      <view class="tipselect">{{A}}</view>
+      <text class="selection">{{answer_A}}</text>
+    </view>
+     <view  data-text="{{answer_B}}"  bindtap="isright" class="selectionSon">
+      <view class="tipselect">{{B}}</view>
+      <text class="selection">{{answer_B}}</text>
+    </view>
+    <view data-text="{{answer_C}}"  bindtap="isright" class="selectionSon">
+      <view class="tipselect">{{C}}</view>
+      <text class="selection">{{answer_C}}</text>
+    </view>
+    <view data-text="{{answer_D}}"  bindtap="isright" class="selectionSon">
+      <view class="tipselect">{{D}}</view>
+      <text class="selection">{{answer_D}}</text>
+    </view>
+  </view>
+</view>
+
+<!-- 遮布测试 -->
+<view class="modalDlg" wx:if="{{showModal}}">
+  <view class="dialog">
+    <view class="dialog-head">
+      <h3>已答完</h3>
+    </view>
+    <!-- <view class='close_mask' bindtap="close_mask">X</view> -->
+  </view>
+  <text class="tishi">您的总成绩为:{{score}}分</text>
+  <view class="btnFlex">
+    <button class="btn" style="width:100px;height:35px;font-size:14px;font-weight:500" bindtap="back">返回</button>
+    <button class="btn" style="width:100px;height:35px;font-size:14px;font-weight:500" bindtap="again">重新</button>
+  </view>
+</view>
+<view class="mask"  wx:if="{{showModal}}"></view>
+<!-- <view class="mask" bindtap="preventTouchMove" wx:if="{{showModal}}"></view> -->
